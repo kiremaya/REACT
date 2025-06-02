@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import  { productos } from "../../data/productos.js";
 import Itemlist from "../itemlistcontainer/Itemlist.jsx";
-import "../itemlistcontainer/itemlist.css"
+import "../itemlistcontainer/itemlist.css";
+import { productos } from "../../data/productos.js";
 function Productos() {
   const [items, setItems] = useState([]);
 

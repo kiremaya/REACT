@@ -1,4 +1,4 @@
-const productos=[
+export const productos = [
   {
     "id": 1,
     "nombre": "Tarot One Piece",
@@ -83,12 +83,4 @@ const productos=[
     "precio": 3850,
     "caracteristicas": ["general"]
   },
-  {
-    "id": 13,
-    "nombre": "Tarot Game of Thrones",
-    "descripcion": "Cartas de tarot inspiradas en los personajes, casas y profecías de Game of Thrones.",
-    "precio": 3950,
-    "caracteristicas": ["general"]
-  }
 ]
-export default productos;
