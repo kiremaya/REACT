@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./itemlist.css";
-import Item from "./Item";
+import Producto from "./Producto.jsx";
 
 const categories = {
   anime: "anime",
@@ -25,16 +25,32 @@ function ItemList({ items }) {
         <button onClick={() => setSelectedCategory(categories.general)}>
           cartas de todo tipo
         </button>
+        <button onClick={() => setSelectedCategory("")}>Ver todos</button>
       </div>
+      <div className="cards-container">
+        {filteredItems.map((item) => (
+          <Producto
+            key={item.id}
+            id={item.id}
+            nombre={item.nombre}
+            precio={item.precio}
+            descripcion={item.descripcion}
+          />
+        ))}
+      </div>
+<<<<<<< HEAD
 
       {filteredItems.map((item) => (
         <Item
           key={item.id}
+          id={item.id}
           nombre={item.nombre}
           descripcion={item.descripcion}
           precio={item.precio}
         />
       ))}
+=======
+>>>>>>> a4448a255480737cb26aa5141322a42b36b4c0d4
     </>
   );
 }
