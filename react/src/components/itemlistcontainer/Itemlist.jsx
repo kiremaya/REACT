@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./itemlist.css";
-import Producto from "./Producto.jsx";
+import Item from "./Item.jsx";
 
 const categories = {
   anime: "anime",
@@ -29,7 +29,7 @@ function ItemList({ items }) {
       </div>
       <div className="cards-container">
         {filteredItems.map((item) => (
-          <Producto
+          <Item
             key={item.id}
             id={item.id}
             nombre={item.nombre}
@@ -38,19 +38,6 @@ function ItemList({ items }) {
           />
         ))}
       </div>
-<<<<<<< HEAD
-
-      {filteredItems.map((item) => (
-        <Item
-          key={item.id}
-          id={item.id}
-          nombre={item.nombre}
-          descripcion={item.descripcion}
-          precio={item.precio}
-        />
-      ))}
-=======
->>>>>>> a4448a255480737cb26aa5141322a42b36b4c0d4
     </>
   );
 }

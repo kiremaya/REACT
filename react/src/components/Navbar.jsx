@@ -12,20 +12,14 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
-        <Link to={"/"} className="navbar-item">
+        <Link to="/" className="navbar-item">
           Inicio
         </Link>
-        <Link to={"/productos"} className="navbar-item">
+        <Link to="/productos" className="navbar-item">
           Productos
         </Link>
-<<<<<<< HEAD
-        <Link to={"/"} className="navbar-item">
-          Contacto
-=======
-       
-        <Link to={"/Nosotros"} className="navbar-item">
+        <Link to="/nosotros" className="navbar-item">
           Nosotros
->>>>>>> a4448a255480737cb26aa5141322a42b36b4c0d4
         </Link>
       </ul>
       <div className="cart-widget" onClick={() => setShowCart(!showCart)} style={{cursor: 'pointer'}}>
